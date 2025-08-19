@@ -3,6 +3,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Float, Environment, Sphere, MeshDistortMaterial } from '@react-three/drei';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+
 import { 
   MapPin, 
   Truck, 
@@ -18,6 +19,7 @@ import {
 import ThreeDLaptop from './ThreeDLaptop';
 import Login from './Login';
 import Signup from './Signup';
+import AboutPage from './AboutPage';
 import './LandingPage.css';
 
 // Animated background spheres
@@ -163,7 +165,7 @@ const LandingPage = () => {
           
           <div className="nav-links">
             <a href="#features">Features</a>
-            <a href="#about">About</a>
+            <a href="./AboutPage">About</a>
             <a href="#contact">Contact</a>
             <motion.button 
               className="login-btn"
@@ -181,14 +183,14 @@ const LandingPage = () => {
             >
               Sign Up
             </motion.button>
-            <motion.button 
+            {/* <motion.button 
               className="get-started-btn"
               onClick={handleGetStarted}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Get Started
-            </motion.button>
+            </motion.button> */}
           </div>
         </div>
       </nav>

@@ -64,7 +64,8 @@
   background: linear-gradient(45deg, #8b5cf6, #ec4899);
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -81,21 +82,22 @@
   margin: 0 auto;
   padding: 2rem;
   display: grid;
-  grid-template-columns: 350px 1fr;
+  grid-template-columns: 400px 1fr;
   gap: 2rem;
   min-height: calc(100vh - 100px);
 }
 
 /* Control Panel */
 .control-panel {
-  background: rgba(255, 255, 255, 0.05);
+  background: linear-gradient(135deg, rgba(15, 15, 35, 0.95) 0%, rgba(26, 26, 46, 0.95) 100%);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(99, 102, 241, 0.2);
   border-radius: 20px;
   padding: 1.5rem;
   height: fit-content;
   overflow-y: auto;
-  max-height: calc(100vh - 150px);
+  max-height: calc(100vh - 140px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .panel-section {
@@ -144,6 +146,7 @@
 .opt-btn:hover {
   background: rgba(99, 102, 241, 0.1);
   border-color: rgba(99, 102, 241, 0.5);
+  transform: translateY(-2px);
 }
 
 .opt-btn.active {
@@ -184,37 +187,45 @@
 .store-list {
   max-height: 200px;
   overflow-y: auto;
+  padding-right: 0.5rem;
 }
 
 .store-item {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(99, 102, 241, 0.2);
-  border-radius: 8px;
-  padding: 0.75rem;
-  margin-bottom: 0.5rem;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  transition: all 0.3s ease;
 }
 
-.store-info {
+.store-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(99, 102, 241, 0.4);
+  transform: translateX(5px);
+}
+
+.store-info-container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 0.5rem;
   flex: 1;
 }
 
 .store-icon {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   color: #6366f1;
   flex-shrink: 0;
 }
 
-.store-info div {
+.store-header {
   display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .store-name {
@@ -223,9 +234,16 @@
   font-size: 0.9rem;
 }
 
+.store-details {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  padding-left: 28px; /* Align with store name */
+}
+
 .store-demand {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.6);
+  font-family: 'Courier New', monospace;
 }
 
 .remove-store-btn {
@@ -386,8 +404,8 @@
   border: 1px solid rgba(99, 102, 241, 0.2);
   border-radius: 20px;
   overflow: hidden;
-  height: fit-content;
   min-height: 600px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .map-placeholder {
@@ -669,7 +687,7 @@
 
 .header-subtitle {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(244, 235, 235, 0.7);
   font-weight: 400;
   margin-top: 0.25rem;
 }
@@ -677,16 +695,16 @@
 .map-view-select {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
+  color: rgb(141, 20, 255);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-size: 0.9rem;
 }
 
 .map-control-btn {
-  background: rgba(99, 102, 241, 0.2);
+  background: rgba(24, 27, 202, 0.2);
   border: 1px solid rgba(99, 102, 241, 0.3);
-  color: white;
+  color: rgb(20, 23, 57);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   cursor: pointer;
@@ -699,6 +717,7 @@
 .map-control-btn:hover {
   background: rgba(99, 102, 241, 0.3);
   border-color: rgba(99, 102, 241, 0.5);
+ 
 }
 
 .header-actions {
@@ -879,4 +898,3 @@
   height: 20px;
   color: #8b5cf6;
 }
-

@@ -259,7 +259,7 @@ const EnhancedWarehouseLocator = () => {
           <div className="header-actions">
             <button className="map-control-btn" onClick={() => setShowCoverage(!showCoverage)}>
               <Target />
-              Coverage
+              Toggle Coverage
             </button>
             <select 
               className="map-view-select"
@@ -290,7 +290,7 @@ const EnhancedWarehouseLocator = () => {
                 <Plus />Add Store
               </button>
               <button className="action-btn secondary" onClick={loadSampleData}>
-                <Users />Sample Data
+                <Users /> Sample Data
               </button>
             </div>
             <div className="store-list">
@@ -481,6 +481,7 @@ const EnhancedWarehouseLocator = () => {
             ref={mapRef}
           >
             <TileLayer
+              key={mapView}
               url={getTileLayerUrl()}
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             />

@@ -198,7 +198,7 @@ const SimpleEnhancedWarehouseLocator = () => {
           </button>
           <div className="header-title">
             <Warehouse className="header-icon" />
-            <h1>WareFlow Enhanced</h1>
+            <h1>LocateIQ Enhanced</h1>
             <span className="header-subtitle">AI-Powered Warehouse Optimization</span>
           </div>
           <div className="header-actions">
