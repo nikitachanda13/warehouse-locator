@@ -1,4 +1,4 @@
-# ***LocateIQ - Advanced Smart Warehouse Locator***
+# ***locateIQ - Advanced Smart Warehouse Locator***
 
 **A modern WEB-Based warehouse optimization tool with **gsap scrolling animations**.It is an AI-powered WEB application for optimal warehouse location optimization with real-time analytics, interactive mapping, and comprehensive supply chain insights.**
 
