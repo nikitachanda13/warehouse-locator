@@ -36,7 +36,7 @@
 1. **Clone the repository** (or use the existing files)
 2. **Navigate to the project directory**:
    ```bash
-   cd warehouse-locator2
+   cd warehouse-locator/vite-project
    ```
 3. **Install dependencies**:
    ```bash
@@ -53,7 +53,7 @@ The application will automatically open in your default browser.
 ## 🏗️ Project Structure
 
 ```
-warehouse-locator2/
+warehouse-locator/
 ├── node_modules/
 ├── public/
 │   └── favicon.ico
