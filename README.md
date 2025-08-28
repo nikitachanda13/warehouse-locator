@@ -460,7 +460,7 @@ warehouse-locator2/
 
 ## 📄 License
 
-This project is open source and available under the (LICENSE).
+This project is open source and available under the LocateIQ LICENSE(LICENSE).
 
 ## 🙏 Acknowledgments
 
